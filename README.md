@@ -17,7 +17,9 @@ To evaluate model performance by tuning hyperparameters.
 To compare algorithmic efficiency and discuss when each model performs best.
 
 
+
 Steps Performed
+
 Step 1: Load and Prepare the Dataset
 
 Loaded the Wine dataset using sklearn.datasets.load_wine().
@@ -41,13 +43,6 @@ Trained a KNN classifier with different k values: [1, 5, 11, 15, 21].
 
 Evaluated accuracy on the test set for each k.
 
-k Value	Accuracy (%)
-1	77.78
-5	80.56
-11	80.56
-15	80.56
-21	80.56
-
 Observation:
 Accuracy improved as k increased, stabilizing around 80.56%, indicating that moderate neighborhood sizes yield more reliable classification.
 
@@ -57,14 +52,6 @@ Step 3: Implement Radius Neighbors (RNN)
 Trained a Radius Neighbors Classifier with radius values: [350, 400, 450, 500, 550, 600].
 
 Evaluated accuracy for each radius value.
-
-Radius	Accuracy (%)
-350	72.22
-400	69.44
-450	69.44
-500	69.44
-550	66.67
-600	66.67
 
 Observation:
 RNN accuracy declined as the radius increased, suggesting that smaller neighborhoods provide more discriminative classification boundaries for this dataset.
